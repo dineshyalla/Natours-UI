@@ -1,7 +1,5 @@
 # Natours-UI
-<<<<<<< HEAD
-  Header
-=======
+
 
 <h2>1. Header</h2> <br>
 <ul><h3>1.1 Header-Section-Background</h3> 
@@ -17,4 +15,4 @@
   <li>Translate container dic 'text-box' to '-50%, -50%'</li>
 </ul>
 
->>>>>>> 4f575d893a6d8f30c2f7096f71cb5b75abe50795
+
