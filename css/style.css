@@ -52,18 +52,20 @@ body {
     top: 40%;    /* it is relative to parent header  */
     left: 50%;
     transform: translate(-50%, -50%);  /* This is with respect to the element itself*/
+    text-align: center;
 }
 .heading-primary{
     color: #ffff;
     text-transform: uppercase;
+    margin-bottom: 60px;
 
     backface-visibility: hidden;
 }
 .heading-primary-main{
     display: block;
-    font-size: 40px;
+    font-size: 4rem;
     font-weight: 400;
-    letter-spacing: 35px;
+    letter-spacing: 31px;
 
     animation-name: moveInLeft;
     animation-duration: 1s;
@@ -71,9 +73,9 @@ body {
 }
 .heading-primary-sub{
     display: block;
-    font-size: 20px;
+    font-size: 1.4rem;
     font-weight: 700;
-    letter-spacing: 11.7px;
+    letter-spacing: 15.4px;
     
     animation-name: moveInRight;
     animation-duration: 1s;
@@ -106,4 +108,69 @@ body {
         opacity: 1;
         transform: translateX(0px);
     }
+}
+
+.btn:link,
+.btn:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative; 
+    
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.2); /* x-shadow y-shadow blur*/
+ }
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.btn-white{
+    background-color: #ffff;
+    color: #777;
+    
+}
+.btn::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    transition: all .4s;  /* animation effect for after hover btn */
+}
+
+.btn-white::after{
+   background-color: #ffff;
+}
+
+.btn:hover::after{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;  /* fades out the animation on hover*/
+}
+
+@keyframes moveInBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(70px);
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.btn-animated{
+    animation: moveInBottom 2s ease-out .60s;
+    animation-fill-mode: backwards; /* Since we are setting a delay, btn is already visible.
+                                       This avoids that and sets the element to 0% of animation*/
 }

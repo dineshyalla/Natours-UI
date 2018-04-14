@@ -15,4 +15,12 @@
   <li>Translate container dic 'text-box' to '-50%, -50%'</li>
 </ul>
 
+<ul><h3>1.3 Title Animation</h3>
+  <li>Animate to left and to right with transfrom: translateX</li>
+</ul>
+
+<ul><h3>1.4 Button Animation</h3>
+  <li>Psuedo Elemets are used to define properties of element at diff. stages</li>
+  <li>Animation-fill-mode automatically applies the style of 0% before the animation starts</li>
+</ul>
 
