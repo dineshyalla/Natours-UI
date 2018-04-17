@@ -12,7 +12,7 @@
 <ul><h3>1.2 Header-Title</h3> 
   <li>Span Title into parts and set display : block</li>
   <li>Define absolute position of container div to 40% Top and 50% left</li>
-  <li>Translate container dic 'text-box' to '-50%, -50%'</li>
+  <li>Translate container div 'text-box' to '-50%, -50%'</li>
 </ul>
 
 <ul><h3>1.3 Title Animation</h3>
@@ -20,7 +20,7 @@
 </ul>
 
 <ul><h3>1.4 Button Animation</h3>
-  <li>Psuedo Elemets are used to define properties of element at diff. stages</li>
+  <li>Psuedo Elements are used to define properties of element at diff. stages</li>
   <li>Animation-fill-mode automatically applies the style of 0% before the animation starts</li>
 </ul>
 
