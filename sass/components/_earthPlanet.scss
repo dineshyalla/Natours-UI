@@ -1,0 +1,27 @@
+.container{
+    bottom: .01%;
+    right: .5%;
+    margin: 0 auto;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    overflow:hidden;
+}
+
+.planet{
+    @include container-dimension;
+    background:url(https://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/planet.png) no-repeat center center;
+    background-size: 35%;
+}
+.rocket{
+    @include container-dimension;
+    background:url(https://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/rocket.png) no-repeat 5% center;
+    background-size: 30%;
+    visibility: hidden;
+    /* Chrome still requires the -webkit- prefix */
+    -webkit-animation:orbit 2s linear infinite;
+    animation:orbit 2s linear infinite;
+    animation-delay: 2s;
+    //animation-fill-mode: backwards;
+    transition:background-position 0.8s;
+}

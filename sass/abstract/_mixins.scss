@@ -1,0 +1,5 @@
+@mixin container-dimension($pos:absolute){
+    position: $pos;
+    width:100%;
+    height:100%;
+}
